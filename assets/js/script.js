@@ -29,6 +29,7 @@ function updateLocalStorage() {
 // ? Function to load from local storage. This function will be called on page load.
 function loadFromLocalStorage() {
   // TODO: Load and parse the data from local storage and paint the images and text on the mood board
+  const storedData = JSON.parse(localStorage.getItem('tempStorageObject'));
 
   if (storedData) {
     tempStorageObject = storedData;
