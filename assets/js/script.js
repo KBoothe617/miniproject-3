@@ -17,6 +17,8 @@ let currentElement = null;
 
 clearBtn.addEventListener('click', function () {
   // TODO: Clear the local storage and refresh the page
+  localStorage.clear();
+  window.location.reload();
 });
 
 function updateLocalStorage() {
